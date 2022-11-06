@@ -123,15 +123,13 @@ body {
     &__content {
     }
 }
-
+.active {
+    border: 1px solid black;
+    border-radius: 6px;
+}
 .menu {
     display: flex;
     gap: 32px;
-
-    &__item:nth-child(1) {
-        border: 1px solid black;
-        border-radius: 6px;
-    }
 
     &__item {
     }
