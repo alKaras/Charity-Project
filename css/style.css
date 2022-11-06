@@ -122,13 +122,18 @@ body {
   gap: 32px;
 }
 .menu__item:nth-child(1) {
-  padding: 8px 22px;
   border: 1px solid black;
   border-radius: 6px;
 }
 .menu__link {
   color: black;
+  padding: 8px 15px;
 }
 .menu__button {
   color: black;
+  padding: 8px 16px;
+  background: #e28484;
+  border: 3px solid #000;
+  box-shadow: 10px 10px 0px #000;
+  border-radius: 5px;
 }
