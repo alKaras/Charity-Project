@@ -1,1 +1,134 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+/*
+    Обнуление стилей
+*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Меняет подсчет ширины блока тах чтобы было легче верстать*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*Убирает линии обводки у некоторых браузеров*/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*Делаем некоторые теги блочными*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*Уравнивает поведение шрифтов и тегов для разных браузеров, запрещают увеличение шрифтов на телефонах*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Наследуем семейство шрифта для всех элементов формы*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*Убирают некоторые особенности браузеров для элементов*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*Обнуление заголовков*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  color: #000;
+}
+
+.header {
+  padding: 34px 0px 58px;
+}
+.header__container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.header__logo {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.06em;
+}
+.menu {
+  display: flex;
+  gap: 32px;
+}
+.menu__item:nth-child(1) {
+  padding: 8px 22px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.menu__link {
+  color: black;
+}
+.menu__button {
+  color: black;
+}
