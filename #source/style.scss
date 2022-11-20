@@ -206,15 +206,17 @@ body {
 
 .footer {
     padding: 56px 0px;
+    
     &__container {
+        
     }
 
-    &__background {
-        position: absolute;
-        background-color: #d3ecda;
-        filter: blur(64px);
-        z-index: -99;
-    }
+    // &__background {
+    //     position: absolute;
+    //     background-color: #d3ecda;
+    //     filter: blur(64px);
+    //     z-index: -99;
+    // }
 
     &__content {
     }

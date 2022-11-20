@@ -177,9 +177,3 @@ body {
 .footer {
   padding: 56px 0px;
 }
-.footer__background {
-  position: absolute;
-  background-color: #d3ecda;
-  filter: blur(64px);
-  z-index: -99;
-}
