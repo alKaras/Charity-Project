@@ -102,6 +102,8 @@ body {
     font-weight: 400;
     font-family: Poppins, sans-serif;
     color: #000;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 ._container {
@@ -109,9 +111,16 @@ body {
     max-width: 1280px;
 }
 
+.img-backg {
+    position: absolute;
+    z-index: -99;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
 .header {
-    // position: relative;
-    // background: url(../img/home/header/bg.svg) top left;
     padding: 34px 0px 58px;
 
     &__logo {
@@ -193,29 +202,21 @@ body {
     }
 }
 
-
 // footer
 
 .footer {
     padding: 56px 0px;
-    &__container {}
+    &__container {
+    }
 
-    &__content {}
+    &__background {
+        position: absolute;
+        background-color: #d3ecda;
+        filter: blur(64px);
+        z-index: -99;
+    }
+
+    &__content {
+    }
 }
 
-.menu {
-
-    &__item {}
-
-    &__link {}
-
-    &__button--footer {}
-}
-.nav-item {
-}
-.nav-link {
-}
-.active {
-}
-.shaded {
-}
