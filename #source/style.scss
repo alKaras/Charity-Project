@@ -135,10 +135,11 @@ body {
     border: 3px solid #000;
     box-shadow: 10px 10px 0px #000;
     border-radius: 6px;
+    padding: 8px 16px;
 }
 
 .shaded-img {
-    border: 3px solid #000;
+    outline: 6px solid #000;
     box-shadow: 10px 10px 0px #000;
     border-radius: 16px;
 }
@@ -175,16 +176,21 @@ body {
     &__button--header {
         color: black;
         background: #e28484;
-        padding: 8px 16px;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
     }
 
     &__button--footer {
         color: #000;
         background: #e28484;
-        padding: 8px 16px;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
     }
 }
-
 
 .page {
     &__history-block {
@@ -194,6 +200,12 @@ body {
     &__news-block {
         padding-top: 45px;
         padding-bottom: 11px;
+    }
+
+    &__donate-block {
+        margin-top: 11px;
+        margin-bottom: 24px;
+        padding: 90px 0 54px;
     }
 }
 
@@ -221,7 +233,11 @@ body {
     }
 
     &__btn {
-        padding: 8px 16px;
+        color: black;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
     }
 }
 
@@ -247,15 +263,74 @@ body {
         min-height: 396px;
     }
 
-    &__content > div:nth-child(2)  {
+    &__content > div:nth-child(2) {
         margin-bottom: 27px;
     }
 
     &__btn {
-        padding: 8px 16px;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        &:hover {
+            color: black;
+        }
     }
 }
 
+// Donate Home section
+
+.donate-block {
+    &__content {
+    }
+
+    &__image {
+        position: relative;
+        &::before {
+            content: url(../img/home/section_donate/bg-up-el.png);
+            position: absolute;
+            z-index: -1;
+            top: -30%;
+            left: 0;
+        }
+
+        &::after {
+            content: url(../img/home/section_donate/bg-low-el.png);
+            position: absolute;
+            z-index: -1;
+            bottom: -50%;
+            left: 50%;
+        }
+    }
+
+    &__text-content {
+    }
+}
+.don-cont {
+    & > *:not(:last-child) {
+        margin-bottom: 17px;
+    }
+    &__heading {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -0.06em;
+    }
+
+    &__text {
+        line-height: calc(24 / 16) * 100%;
+        font-weight: 400;
+    }
+
+    &__btn {
+        display: inline-block;
+        cursor: pointer;
+        color: #000;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
 
 // footer
 
