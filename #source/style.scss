@@ -15,7 +15,7 @@
 *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 /*Убирает линии обводки у некоторых браузеров*/
@@ -120,6 +120,30 @@ body {
     min-height: 100vh;
     overflow: hidden;
 }
+
+.active {
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.bg-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.shaded {
+    border: 3px solid #000;
+    box-shadow: 10px 10px 0px #000;
+    border-radius: 6px;
+}
+
+.shaded-img {
+    border: 3px solid #000;
+    box-shadow: 10px 10px 0px #000;
+    border-radius: 16px;
+}
+
+// ========================================
 .header {
     padding: 34px 0px 58px;
 
@@ -135,10 +159,7 @@ body {
     line-height: calc(48 / 32) * 100%;
     letter-spacing: -0.06em;
 }
-.active {
-    border: 1px solid black;
-    border-radius: 6px;
-}
+
 .menu {
     display: flex;
     gap: 32px;
@@ -154,26 +175,25 @@ body {
     &__button--header {
         color: black;
         background: #e28484;
+        padding: 8px 16px;
     }
 
     &__button--footer {
         color: #000;
         background: #e28484;
+        padding: 8px 16px;
     }
 }
 
-.shaded {
-    border: 3px solid #000;
-    box-shadow: 10px 10px 0px #000;
-    border-radius: 5px;
-    padding: 8px 16px;
-}
 
 .page {
-    padding-top: 62px;
-    padding-bottom: 27px;
-
     &__history-block {
+        padding-top: 62px;
+        padding-bottom: 27px;
+    }
+    &__news-block {
+        padding-top: 45px;
+        padding-bottom: 11px;
     }
 }
 
@@ -192,7 +212,8 @@ body {
     &__heading {
         font-weight: 600;
         line-height: 102.5%;
-        font-size: 84px;
+        font-size: 90px;
+        text-align: left;
     }
 
     &__text {
@@ -200,16 +221,48 @@ body {
     }
 
     &__btn {
+        padding: 8px 16px;
     }
 }
+
+//News-Home-block
+
+.news-block {
+    &__heading {
+        max-width: 999px;
+        margin-left: auto;
+        text-align: right;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 102.5%;
+        letter-spacing: -0.06em;
+    }
+
+    &__content > div:first-child {
+        margin-top: 27px;
+        margin-bottom: 61px;
+    }
+
+    &__card-row {
+        min-height: 396px;
+    }
+
+    &__content > div:nth-child(2)  {
+        margin-bottom: 27px;
+    }
+
+    &__btn {
+        padding: 8px 16px;
+    }
+}
+
 
 // footer
 
 .footer {
     padding: 56px 0px;
-    
+
     &__container {
-        
     }
 
     // &__background {
@@ -222,4 +275,3 @@ body {
     &__content {
     }
 }
-

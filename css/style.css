@@ -13,7 +13,7 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 /*Убирает линии обводки у некоторых браузеров*/
@@ -121,6 +121,30 @@ body {
   overflow: hidden;
 }
 
+.active {
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.bg-img {
+  max-height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.shaded {
+  border: 3px solid #000;
+  box-shadow: 10px 10px 0px #000;
+  border-radius: 6px;
+}
+
+.shaded-img {
+  border: 3px solid #000;
+  box-shadow: 10px 10px 0px #000;
+  border-radius: 16px;
+}
+
 .header {
   padding: 34px 0px 58px;
 }
@@ -129,11 +153,6 @@ body {
   font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.06em;
-}
-
-.active {
-  border: 1px solid black;
-  border-radius: 6px;
 }
 
 .menu {
@@ -147,34 +166,62 @@ body {
 .menu__button--header {
   color: black;
   background: #e28484;
+  padding: 8px 16px;
 }
 .menu__button--footer {
   color: #000;
   background: #e28484;
-}
-
-.shaded {
-  border: 3px solid #000;
-  box-shadow: 10px 10px 0px #000;
-  border-radius: 5px;
   padding: 8px 16px;
 }
 
-.page {
+.page__history-block {
   padding-top: 62px;
   padding-bottom: 27px;
 }
+.page__news-block {
+  padding-top: 45px;
+  padding-bottom: 11px;
+}
+
 .history-block__text-content > *:not(:last-child) {
   margin-bottom: 24px;
 }
 .hist-cont__heading {
   font-weight: 600;
   line-height: 102.5%;
-  font-size: 84px;
+  font-size: 90px;
+  text-align: left;
 }
 .hist-cont__text {
   line-height: 150%;
 }
+.hist-cont__btn {
+  padding: 8px 16px;
+}
+
+.news-block__heading {
+  max-width: 999px;
+  margin-left: auto;
+  text-align: right;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 102.5%;
+  letter-spacing: -0.06em;
+}
+.news-block__content > div:first-child {
+  margin-top: 27px;
+  margin-bottom: 61px;
+}
+.news-block__card-row {
+  min-height: 396px;
+}
+.news-block__content > div:nth-child(2) {
+  margin-bottom: 27px;
+}
+.news-block__btn {
+  padding: 8px 16px;
+}
+
 .footer {
   padding: 56px 0px;
 }
