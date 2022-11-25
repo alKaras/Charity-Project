@@ -46,7 +46,6 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background: url(../img/home/header/bg.svg) no-repeat;
 }
 
 /*Наследуем семейство шрифта для всех элементов формы*/
@@ -120,6 +119,7 @@ body {
 .wrapper {
   min-height: 100vh;
   overflow: hidden;
+  background: url(../img/home/header/bg.svg) no-repeat;
 }
 
 .active {
@@ -192,8 +192,8 @@ body {
 }
 .page__donate-block {
   margin-top: 11px;
-  margin-bottom: 24px;
-  padding: 90px 0 54px;
+  margin-bottom: 54px;
+  padding: 90px 0 106px;
 }
 
 .history-block__text-content > *:not(:last-child) {
@@ -289,7 +289,8 @@ body {
 }
 
 .footer {
-  position: relative;
+  background: rgb(211, 236, 218);
+  background: linear-gradient(0deg, rgb(211, 236, 218) 64%, rgb(255, 255, 255) 100%);
   padding: 56px 0px;
 }
 .footer img {
