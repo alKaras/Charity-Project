@@ -18,39 +18,46 @@
         <header class="header">
             <div class="header__content _container">
                 <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid d-flex justify-content-lg-between">
-                        <a class="navbar-brand text-decoration-underline logo" href="index.html">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand text-decoration-underline header__logo logo">
                             Ilyinsky
                             Foundation
                         </a>
-                        <div class="navbar-content header__content content">
-                            <ul
-                                class="navbar-nav  d-flex justify-content-between align-items-center content__menu menu">
-                                <li class="menu__item nav-item">
-                                    <a class="menu__link nav-link active" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="menu__item nav-item">
-                                    <a class="menu__link nav-link" href="#">About Us</a>
-                                </li>
-                                <li class="menu__item nav-item">
-                                    <a class="menu__link nav-link" href="#">News</a>
-                                </li>
-                                <li class="menu__item nav-item">
-                                    <a href="#" class="nav-link menu__button--header shaded">Donate</a>
-                                </li>
-                                <li class="menu__item nav-item dropdown">
-                                    <img src="img/home/header/global.svg" class="d-inline-block" alt="globus">
-                                    <a class="menu__link nav-link dropdown-toggle d-inline-block text-uppercase"
-                                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="order-3 header__btn-group d-flex align-items-center">
+                            <a href="#" class="header__button shaded">Donate</a>
+                            <div class="header__dropdown">
+                                <ul class="dropdown d-flex align-items-center m-0">
+                                    <img src="img/home/header/global.svg" class="pe-2" alt="globus">
+                                    <a class="text-black dropdown-toggle text-uppercase" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         eng
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item text-uppercase active" href="#">English</a></li>
                                         <li><a class="dropdown-item text-uppercase" href="#">Ukrainian</a></li>
                                     </ul>
+                                </ul>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse header__content content" id="navbarCollapse">
+                            <ul class="navbar-nav ms-auto content__menu menu">
+                                <li class="menu__item nav-item">
+                                    <a href="#" class="menu__link nav-link active" aria-current="page">Home</a>
+                                </li>
+                                <li class="menu__item nav-item">
+                                    <a href="#" class="menu__link nav-link">About Us</a>
+                                </li>
+                                <li class="menu__item nav-item">
+                                    <a href="#" class="menu__link nav-link">News</a>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </nav>
             </div>
@@ -60,10 +67,10 @@
             <section class="page__history-block history-block _container">
                 <section class="history-block__content row">
                     <div class="history-block__text-content hist-cont col-xl-6 ">
-                        <div class="hist-cont__heading">
+                        <h1 class="hist-cont__heading">
                             For twenty years, we have been feeding up to two hundred people a
                             day...
-                        </div>
+                        </h1>
                         <div class="hist-cont__text">
                             Since 2000, we have taken small but confident steps to help everyone who needed food,
                             clothes,
@@ -80,31 +87,37 @@
                 </section>
             </section>
             <section class="page__news-block news-block _container">
-                <div class="news-block__heading">
+                <h2 class="news-block__heading">
                     You can see with your own eyes people who need you and your help. Every donation, every need
                     met, every lunch, we put in the "News" <br>section.
-                </div>
+                </h2>
                 <div class="news-block__content">
                     <div class="news-block__card-row card-row row">
-                        <div class="card-row__card col-xl-4 align-self-center">
-                            <img src="img/home/section_news/card1.png" class="shaded-img" alt="news-first-card">
+                        <div class="card-row__card col-xl-4 col-md-4 align-self-center">
+                            <img src="img/home/section_news/card1.png" class="shaded-img img-fluid"
+                                alt="news-first-card">
                         </div>
-                        <div class="card-row__card-middle align-self-start col-xl-4">
-                            <img src="img/home/section_news/card2.png" class="shaded-img" alt="news-second-card">
+                        <div class="card-row__card-middle col-md-4 align-self-start col-xl-4">
+                            <img src="img/home/section_news/card2.png" class="shaded-img img-fluid"
+                                alt="news-second-card">
                         </div>
-                        <div class="card-row__card col-xl-4 align-self-center">
-                            <img src="img/home/section_news/card3.png" class="shaded-img" alt="news-third-card">
+                        <div class="card-row__card col-xl-4 col-md-4 align-self-center">
+                            <img src="img/home/section_news/card3.png" class="shaded-img img-fluid"
+                                alt="news-third-card">
                         </div>
                     </div>
                     <div class="news-block__card-row card-row row">
-                        <div class="card-row__card col-xl-4 align-self-center">
-                            <img src="img/home/section_news/card4.png" class="shaded-img" alt="news-fourth-card">
+                        <div class="card-row__card col-xl-4 col-md-4 align-self-center">
+                            <img src="img/home/section_news/card4.png" class="shaded-img img-fluid"
+                                alt="news-fourth-card">
                         </div>
-                        <div class="card-row__card-middle align-self-start col-xl-4">
-                            <img src="img/home/section_news/card5.png" class="shaded-img" alt="news-fifth-card">
+                        <div class="card-row__card-middle col-md-4 align-self-start col-xl-4">
+                            <img src="img/home/section_news/card5.png" class="shaded-img img-fluid"
+                                alt="news-fifth-card">
                         </div>
-                        <div class="card-row__card col-xl-4 align-self-center">
-                            <img src="img/home/section_news/card6.png" class="shaded-img" alt="news-sixth-card">
+                        <div class="card-row__card col-xl-4 col-md-4 align-self-center">
+                            <img src="img/home/section_news/card6.png" class="shaded-img img-fluid"
+                                alt="news-sixth-card">
                         </div>
                     </div>
                     <a class="news-block__btn shaded">News <i class="fa-solid fa-arrow-right-long"></i></a>
@@ -116,10 +129,10 @@
                         <img src="img/home/section_donate/donate.png" class="shaded-img" alt="donate-card-image">
                     </div>
                     <div class="donate-block__text-content don-cont col-xl-6">
-                        <div class="don-cont__heading">
-                            WE ASK ALL PEOPLE OF GOOD WILL TO PARTICIPATE IN CHARITY ACTIVITIES IN THE CITY OF SUMY, IN
-                            UKRAINE!
-                        </div>
+                        <h2 class="don-cont__heading text-uppercase">
+                            we ask all people of good will to participate in charity activities in the city of sumy, in
+                            ukraine!
+                        </h2>
                         <div class="don-cont__text">
                             Your smallest, modest donation will be spent on feeding beggars, helping low-income, large
                             families, elderly people on the verge of poverty, disabled people, refugees...
@@ -134,7 +147,7 @@
         <footer class="footer">
             <section class="footer__container _container">
                 <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid d-flex justify-content-lg-between">
+                    <div class="container-fluid">
                         <a class="navbar-brand text-decoration-underline logo" href="index.html">
                             Ilyinsky
                             Foundation
@@ -151,11 +164,9 @@
                                 <li class="menu__item nav-item">
                                     <a class="menu__link nav-link" href="#">News</a>
                                 </li>
-                                <li class="menu__item nav-item">
-                                    <a href="#" class="nav-link menu__button--footer shaded">Donate</a>
-                                </li>
                             </ul>
                         </div>
+                        <a href="#" class="footer__button--footer shaded">Donate</a>
                     </div>
                 </nav>
             </section>
@@ -163,7 +174,7 @@
     </div>
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

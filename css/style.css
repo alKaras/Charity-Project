@@ -110,6 +110,11 @@ body {
   margin: 0 auto;
   max-width: 1280px;
 }
+@media (max-width: 1280px) {
+  ._container {
+    max-width: 1120px;
+  }
+}
 
 .img-backg {
   position: absolute;
@@ -147,9 +152,28 @@ body {
   border-radius: 16px;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .header {
   padding: 34px 0px 58px;
 }
+.header__button {
+  color: black;
+  background: #e28484;
+  cursor: pointer;
+}
+.header__button:hover {
+  color: black;
+}
+.header__dropdown {
+  margin-right: 5px;
+}
+
 .logo {
   font-size: 32px;
   font-weight: 600;
@@ -159,27 +183,12 @@ body {
 
 .menu {
   display: flex;
+  margin-right: 32px;
   gap: 32px;
 }
 .menu__link {
   color: black;
   padding: 8px 15px;
-}
-.menu__button--header {
-  color: black;
-  background: #e28484;
-  cursor: pointer;
-}
-.menu__button--header:hover {
-  color: black;
-}
-.menu__button--footer {
-  color: #000;
-  background: #e28484;
-  cursor: pointer;
-}
-.menu__button--footer:hover {
-  color: black;
 }
 
 .page__history-block {
@@ -298,4 +307,21 @@ body {
   height: 100%;
   z-index: -1;
   position: absolute;
+}
+.footer__content {
+  margin-left: auto;
+  margin-right: 32px;
+}
+@media screen and (max-width: 992px) {
+  .footer__content {
+    display: none;
+  }
+}
+.footer__button--footer {
+  color: #000;
+  background: #e28484;
+  cursor: pointer;
+}
+.footer__button--footer:hover {
+  color: black;
 }

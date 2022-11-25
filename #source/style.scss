@@ -109,6 +109,10 @@ body {
 ._container {
     margin: 0 auto;
     max-width: 1280px;
+
+    @media (max-width: 1280px) {
+        max-width: 1120px;
+    }
 }
 
 .img-backg {
@@ -144,7 +148,12 @@ body {
     box-shadow: 10px 10px 0px #000;
     border-radius: 16px;
 }
-
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 // ========================================
 .header {
     padding: 34px 0px 58px;
@@ -153,6 +162,22 @@ body {
     }
 
     &__content {
+    }
+
+    &__button {
+        color: black;
+        background: #e28484;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+
+    &__btn-group {
+    }
+
+    &__dropdown {
+        margin-right: 5px;
     }
 }
 .logo {
@@ -164,32 +189,14 @@ body {
 
 .menu {
     display: flex;
+    margin-right: 32px;
     gap: 32px;
-
     &__item {
     }
 
     &__link {
         color: black;
         padding: 8px 15px;
-    }
-
-    &__button--header {
-        color: black;
-        background: #e28484;
-        cursor: pointer;
-        &:hover {
-            color: black;
-        }
-    }
-
-    &__button--footer {
-        color: #000;
-        background: #e28484;
-        cursor: pointer;
-        &:hover {
-            color: black;
-        }
     }
 }
 
@@ -354,5 +361,20 @@ body {
     }
 
     &__content {
+        margin-left: auto;
+        margin-right: 32px;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__button--footer {
+        color: #000;
+        background: #e28484;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
     }
 }
