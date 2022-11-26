@@ -344,6 +344,268 @@ body {
     }
 }
 
+//Main-AboutUS section
+.page-about {
+    &__head-history {
+        padding: 15px 0px 52px;
+    }
+
+    &__main-history {
+        padding: 53px 0px;
+    }
+
+    &__sub-changes {
+        padding: 52px 0px;
+    }
+
+    &__changes {
+        padding: 53px 0px 30px;
+    }
+
+    &__donations {
+        padding: 30px 0px 110px;
+    }
+}
+.head-hist {
+    &__container {
+    }
+
+    &__heading {
+        font-weight: 600;
+        line-height: 102.5%;
+        letter-spacing: -0.06em;
+        font-size: 90px;
+        margin-bottom: 44px;
+    }
+
+    &__content {
+        gap: 95px;
+        align-items: center;
+    }
+
+    &__image {
+    }
+
+    &__text-content {
+    }
+}
+
+.headhist-cont {
+    & > *:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    &__subheading {
+        font-size: 20px;
+        line-height: calc(30 / 20) * 100%;
+    }
+
+    &__quotes {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 102.5%;
+        letter-spacing: -0.06em;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: calc(30 / 20) * 100%;
+    }
+}
+.main-history {
+    &__container {
+    }
+
+    &__content > *:not(:last-child) {
+        margin-bottom: 105px;
+    }
+
+    &__section-f-cont {
+        gap: 85px;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        line-height: calc(30 / 20) * 100%;
+    }
+
+    &__text {
+    }
+
+    &__image {
+    }
+
+    &__section-s-cont {
+        font-size: 20px;
+        text-align: center;
+        line-height: calc(30 / 20) * 100%;
+    }
+
+    &__section-th-cont {
+        gap: 80px;
+        align-items: center;
+        font-size: 20px;
+        line-height: calc(30 / 20) * 100%;
+        text-align: right;
+    }
+}
+
+.section-second {
+    &__text {
+        margin-bottom: 20px;
+    }
+}
+.sub-changes {
+    &__container {
+    }
+
+    &__content {
+    }
+
+    &__sub-heading {
+        text-align: center;
+        font-size: 20px;
+        line-height: calc(30 / 20) * 100%;
+        margin-bottom: 25px;
+    }
+
+    &__card-row {
+    }
+
+    &__card-column {
+    }
+}
+.changes {
+    &__container {
+    }
+
+    &__content {
+    }
+
+    &__heading {
+        font-size: 40px;
+        line-height: 102.5%;
+        text-align: center;
+        letter-spacing: -0.06em;
+        font-weight: 600;
+        height: 410px;
+        width: 1148px;
+        margin: 0 auto;
+        margin-bottom: 46px;
+    }
+
+    &__card-row {
+    }
+
+    &__card-column {
+    }
+}
+.donations {
+    &__container {
+    }
+
+    &__content {
+    }
+
+    &__heading {
+        text-align: center;
+        font-weight: 600;
+        font-size: 48px;
+        width: 850px;
+        margin: 0 auto;
+        line-height: 100%;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: calc(36 / 24) * 100%;
+        text-align: center;
+        margin: 0 auto;
+        width: 727px;
+        margin-bottom: 28px;
+    }
+
+    &__button {
+        display: block;
+        width: 128px;
+        margin: 0 auto;
+
+        background-color: rgba(226, 132, 132, 1);
+        color: #000;
+        font-size: 24px;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+//Main Donate sections
+.page-donate {
+    &__main-donate {
+        padding-top: 21px;
+    }
+
+    &__postscriptum {
+    }
+}
+.main-donate {
+    &__container {
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 90px;
+        line-height: 102.5%;
+        width: 653px;
+        letter-spacing: -0.06em;
+        margin-bottom: 46px;
+    }
+
+    &__content {
+    }
+}
+.accounts {
+    &__heading {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 102.5%;
+        margin-bottom: 25px;
+    }
+
+    &__content-cards {
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__button {
+        padding: 16px;
+        border-radius: 15px;
+    }
+}
+.button-copy {
+}
+.postscriptum {
+    &__container {
+    }
+
+    &__text {
+        font-size: 48px;
+        line-height: 100%;
+        font-weight: 600;
+        margin: 0 auto;
+        width: 845px;
+        text-align: center;
+        margin-bottom: 55px;
+    }
+}
+
 // footer
 
 .footer {
