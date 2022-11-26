@@ -168,13 +168,19 @@ body {
 
     &__nav-content {
         margin-left: auto;
-        @media (max-width:992px) {
+        @media (max-width: 992px) {
             display: none;
         }
     }
 
     &__mob-content {
+        margin-top: 25px;
         text-align: center;
+        display: none;
+
+        @media screen and (max-width: 992px) {
+            display: block;
+        }
     }
 
     &__button {
@@ -184,6 +190,15 @@ body {
         &:hover {
             color: black;
         }
+        @media screen and (max-width: 600px) {
+            padding: 6px 10px;
+
+        }
+
+        @media (max-width: 500px) {
+            font-size: 10px;
+            padding: 4px 8px;
+        }
     }
 
     &__btn-group {
@@ -191,6 +206,14 @@ body {
 
     &__dropdown {
         margin-right: 5px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 24px;
+        }
+    
+        @media (max-width: 500px){
+            font-size: 10px;
+        }
     }
 }
 .logo {
@@ -198,6 +221,14 @@ body {
     font-weight: 600;
     line-height: calc(48 / 32) * 100%;
     letter-spacing: -0.06em;
+
+    @media screen and (max-width: 600px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 14px;
+    }
 }
 
 .menu {
