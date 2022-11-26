@@ -131,6 +131,12 @@ body {
   border: 1px solid black;
   border-radius: 6px;
 }
+@media (max-width: 992px) {
+  .active {
+    border: 0;
+    border-radius: 0;
+  }
+}
 
 .bg-img {
   max-height: 100%;
@@ -161,6 +167,17 @@ body {
 
 .header {
   padding: 34px 0px 58px;
+}
+.header__nav-content {
+  margin-left: auto;
+}
+@media (max-width: 992px) {
+  .header__nav-content {
+    display: none;
+  }
+}
+.header__mob-content {
+  text-align: center;
 }
 .header__button {
   color: black;

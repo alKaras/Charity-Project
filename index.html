@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__content _container">
+            <div class="header__container _container">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a href="#" class="navbar-brand text-decoration-underline header__logo logo">
@@ -24,7 +24,7 @@
                             Foundation
                         </a>
                         <div class="order-3 header__btn-group d-flex align-items-center">
-                            <a href="#" class="header__button shaded">Donate</a>
+                            <a href="donate.html" class="header__button shaded">Donate</a>
                             <div class="header__dropdown">
                                 <ul class="dropdown d-flex align-items-center m-0">
                                     <img src="img/home/header/global.svg" class="pe-2" alt="globus">
@@ -38,27 +38,41 @@
                                     </ul>
                                 </ul>
                             </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <!-- <span class="navbar-toggler-icon"></span> -->
+                                <i class="fas fa-bars"></i>
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse header__content content" id="navbarCollapse">
+                        <div class="header__nav-content content">
                             <ul class="navbar-nav ms-auto content__menu menu">
                                 <li class="menu__item nav-item">
-                                    <a href="#" class="menu__link nav-link active" aria-current="page">Home</a>
+                                    <a href="index.html" class="menu__link nav-link active" aria-current="page">Home</a>
                                 </li>
                                 <li class="menu__item nav-item">
-                                    <a href="#" class="menu__link nav-link">About Us</a>
+                                    <a href="about.html" class="menu__link nav-link">About Us</a>
                                 </li>
                                 <li class="menu__item nav-item">
-                                    <a href="#" class="menu__link nav-link">News</a>
+                                    <a href="news.html" class="menu__link nav-link">News</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+                <div class="collapse navbar-collapse header__mob-content mob-content" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mob-content__menu menu">
+                        <li class="menu__item nav-item">
+                            <a href="index.html" class="menu__link nav-link" aria-current="page">Home</a>
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a href="about.html" class="menu__link nav-link">About Us</a>
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a href="news.html" class="menu__link nav-link">News</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </header>

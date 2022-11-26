@@ -129,6 +129,11 @@ body {
 .active {
     border: 1px solid black;
     border-radius: 6px;
+
+    @media (max-width: 992px) {
+        border: 0;
+        border-radius: 0;
+    }
 }
 
 .bg-img {
@@ -161,7 +166,15 @@ body {
     &__logo {
     }
 
-    &__content {
+    &__nav-content {
+        margin-left: auto;
+        @media (max-width:992px) {
+            display: none;
+        }
+    }
+
+    &__mob-content {
+        text-align: center;
     }
 
     &__button {
