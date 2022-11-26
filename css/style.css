@@ -1,5 +1,14 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+/* 
+@media (max-width: 1200px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
+*/
 /*
     Обнуление стилей
 */
@@ -125,6 +134,17 @@ body {
   min-height: 100vh;
   overflow: hidden;
   background: url(../img/home/header/bg.svg) no-repeat;
+  background-size: 50%;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    background-size: 60%;
+  }
+}
+@media (max-width: 656px) {
+  .wrapper {
+    background-size: 50%;
+  }
 }
 
 .active {
@@ -158,6 +178,7 @@ body {
   border-radius: 16px;
 }
 
+.navbar-toggler-icon,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -165,8 +186,23 @@ body {
   box-shadow: none;
 }
 
+.navbar-toggler {
+  background-image: none;
+  border: none;
+}
+
+.dropdown-menu {
+  min-width: 60px !important;
+  left: 50% !important;
+  text-align: center;
+}
+
+.dropdown-item {
+  border: none;
+}
+
 .header {
-  padding: 34px 0px 58px;
+  padding: 34px 15px 58px;
 }
 .header__nav-content {
   margin-left: auto;
@@ -247,41 +283,65 @@ body {
 }
 
 .page__history-block {
-  padding-top: 62px;
-  padding-bottom: 27px;
+  padding: 62px 15px 27px;
 }
 .page__news-block {
-  padding-top: 45px;
-  padding-bottom: 11px;
+  padding: 45px 15px 11px;
 }
 .page__donate-block {
   margin-top: 11px;
   margin-bottom: 54px;
-  padding: 90px 0 106px;
+  padding: 90px 15px 106px;
 }
 
-.history-block__text-content > *:not(:last-child) {
+.history-block__heading h1 {
+  font-weight: 600;
+  line-height: 102.5%;
+  font-size: 90px;
   margin-bottom: 24px;
+}
+@media (max-width: 1200px) {
+  .history-block__heading h1 {
+    text-align: center;
+    font-size: 64px;
+  }
 }
 .history-block__video-content img {
   border: 6px solid black;
   border-radius: 16px;
 }
-
-.hist-cont__heading {
-  font-weight: 600;
-  line-height: 102.5%;
-  font-size: 90px;
-  text-align: left;
+@media (max-width: 1200px) {
+  .history-block__video-content {
+    text-align: center;
+    margin-bottom: 24px;
+  }
 }
-.hist-cont__text {
+.history-block__text {
+  margin-bottom: 24px;
+  font-size: 24px;
   line-height: 150%;
 }
-.hist-cont__btn {
+@media (max-width: 1200px) {
+  .history-block__text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+}
+.history-block__btn {
   color: black;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 153px;
 }
-.hist-cont__btn:hover {
+@media (max-width: 1200px) {
+  .history-block__btn {
+    margin: 0 auto;
+  }
+}
+.history-block__btn:hover {
   color: black;
 }
 
@@ -294,12 +354,31 @@ body {
   line-height: 102.5%;
   letter-spacing: -0.06em;
 }
+@media (max-width: 1200px) {
+  .news-block__heading {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 .news-block__content > div:first-child {
   margin-top: 27px;
   margin-bottom: 61px;
 }
+@media (max-width: 767px) {
+  .news-block__content > div:first-child {
+    margin-bottom: 30px;
+  }
+}
 .news-block__card-row {
   min-height: 396px;
+}
+@media (max-width: 767px) {
+  .news-block__card-row {
+    text-align: center;
+  }
+  .news-block__card-row > *:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
 .news-block__content > div:nth-child(2) {
   margin-bottom: 27px;
@@ -307,7 +386,15 @@ body {
 .news-block__btn {
   color: black;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  width: 103px;
+}
+@media (max-width: 767px) {
+  .news-block__btn {
+    margin: 0 auto;
+    max-width: 153px;
+  }
 }
 .news-block__btn:hover {
   color: black;
@@ -330,6 +417,17 @@ body {
   bottom: -50%;
   left: 50%;
 }
+@media (max-width: 767px) {
+  .donate-block__image {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .donate-block__text-content {
+    text-align: center;
+  }
+}
+
 .don-cont > *:not(:last-child) {
   margin-bottom: 17px;
 }
@@ -344,9 +442,16 @@ body {
   font-weight: 400;
 }
 .don-cont__btn {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  width: 123px;
   cursor: pointer;
   color: #000;
+}
+@media (max-width: 767px) {
+  .don-cont__btn {
+    margin: 0 auto;
+  }
 }
 .don-cont__btn:hover {
   color: #000;
