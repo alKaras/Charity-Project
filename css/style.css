@@ -617,6 +617,74 @@ body {
   margin-bottom: 55px;
 }
 
+.page-news__news {
+  padding: 11px 15px 40px;
+}
+
+.news__container > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+.news__heading {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 64px;
+}
+.news-section {
+  padding: 10px 15px 15px;
+}
+.news-section__heading {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.news-section__image {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.news-section__main-text {
+  font-size: 20px;
+  line-height: 102.5%;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+.news-section__button {
+  margin-bottom: 25px;
+  display: flex;
+  max-width: 123px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: #e28484;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.news-section__button:hover {
+  color: black;
+}
+.news-section__last-news {
+  margin-top: 55px;
+}
+
+.lst-news__body {
+  gap: 10px;
+  align-items: center;
+  padding: 10px 5px 10px;
+}
+.lst-news__image img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.lst-news__text {
+  margin-bottom: 8px;
+}
+.lst-news__button {
+  padding: 8px 16px;
+  display: flex;
+  font-weight: 600;
+  max-width: 125px;
+  justify-content: center;
+}
+
 .footer {
   background: rgb(211, 236, 218);
   background: linear-gradient(0deg, rgb(211, 236, 218) 64%, rgb(255, 255, 255) 100%);
