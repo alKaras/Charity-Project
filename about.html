@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__content _container">
+            <div class="header__container _container">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a href="#" class="navbar-brand text-decoration-underline header__logo logo">
@@ -24,7 +24,7 @@
                             Foundation
                         </a>
                         <div class="order-3 header__btn-group d-flex align-items-center">
-                            <a href="#" class="header__button shaded">Donate</a>
+                            <a href="donate.html" class="header__button shaded">Donate</a>
                             <div class="header__dropdown">
                                 <ul class="dropdown d-flex align-items-center m-0">
                                     <img src="img/home/header/global.svg" class="pe-2" alt="globus">
@@ -33,43 +33,57 @@
                                         eng
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item text-uppercase active" href="#">English</a></li>
-                                        <li><a class="dropdown-item text-uppercase" href="#">Ukrainian</a></li>
+                                        <li><a class="dropdown-item text-uppercase active" href="#">Eng</a></li>
+                                        <li><a class="dropdown-item text-uppercase" href="#">Ua</a></li>
                                     </ul>
                                 </ul>
                             </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                                 aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse header__content content" id="navbarCollapse">
+                        <div class="header__nav-content content">
                             <ul class="navbar-nav ms-auto content__menu menu">
                                 <li class="menu__item nav-item">
-                                    <a href="#" class="menu__link nav-link" aria-current="page">Home</a>
+                                    <a href="index.html" class="menu__link nav-link active" aria-current="page">Home</a>
                                 </li>
                                 <li class="menu__item nav-item">
-                                    <a href="#" class="menu__link nav-link active">About Us</a>
+                                    <a href="about.html" class="menu__link nav-link">About Us</a>
                                 </li>
                                 <li class="menu__item nav-item">
-                                    <a href="#" class="menu__link nav-link">News</a>
+                                    <a href="news.html" class="menu__link nav-link">News</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+                <div class="collapse navbar-collapse header__mob-content mob-content" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mob-content__menu menu">
+                        <li class="menu__item nav-item">
+                            <a href="index.html" class="menu__link nav-link" aria-current="page">Home</a>
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a href="about.html" class="menu__link nav-link">About Us</a>
+                        </li>
+                        <li class="menu__item nav-item">
+                            <a href="news.html" class="menu__link nav-link">News</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
         </header>
         <main class="page-about">
             <section class="page-about__head-history head-hist">
-                <div class="head-hist__container _container">
+                <div class="head-hist__container container-fluid _container">
                     <h1 class="head-hist__heading">Our History</h1>
                     <div class="head-hist__content d-flex justify-content-between">
-                        <div class="head-hist__image col-xl-6 col-md-6 col-xs-12">
+                        <div class="head-hist__image col-xl-6 col-md-12 col-xs-12">
                             <img src="img/about/head-history/img1.png" alt="welcome-img" class="shaded-img img-fluid">
                         </div>
-                        <div class="head-hist__text-content headhist-cont col-xl-6 col-md-6 col-xs-12">
+                        <div class="head-hist__text-content headhist-cont col-xl-6 col-md-12 col-xs-12">
                             <div class="headhist-cont__subheading">
                                 Our activity started in 2000, from feeding 3-5 homeless people, who were in various
                                 addictions.

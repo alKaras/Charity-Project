@@ -560,14 +560,22 @@ body {
     }
 }
 
-//Main-AboutUS section
+//Page-AboutUS section
 .page-about {
     &__head-history {
         padding: 15px 0px 52px;
+
+        @media (max-width: 1280px) {
+            padding: 15px 15px 52px;
+        }
     }
 
     &__main-history {
         padding: 53px 0px;
+
+        @media (max-width: 1280px) {
+            padding: 53px 15px;
+        }
     }
 
     &__sub-changes {
@@ -591,18 +599,42 @@ body {
         line-height: 102.5%;
         letter-spacing: -0.06em;
         font-size: 90px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(44px + 44 * (100vw / 1200));
+        }
+        @media (max-width: 767px) {
+            font-size: calc(44px + (44 + 44 * 0.7) * ((100vw - 320px) / 1200));
+        }
         margin-bottom: 44px;
     }
 
     &__content {
-        gap: 95px;
         align-items: center;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__image {
+
+        @media (max-width: 1024px) {
+            margin-bottom: 35px;
+            text-align: center;
+            
+        }
+        @media (max-width: 767px) {
+        }
     }
 
     &__text-content {
+        padding-left: 85px;
+
+        @media (max-width: 1024px) {
+            padding-left: 0;
+        }
     }
 }
 
@@ -613,6 +645,13 @@ body {
     &__subheading {
         font-size: 20px;
         line-height: calc(30 / 20) * 100%;
+        @media (max-width: 1200px) {
+            font-size: calc(16px + 4 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(16px + (4 + 4 * 0.7) * (100vw - 320px) / 1200);
+        }
     }
 
     &__quotes {
@@ -620,11 +659,26 @@ body {
         font-size: 40px;
         line-height: 102.5%;
         letter-spacing: -0.06em;
+        @media (max-width: 1200px) {
+            font-size: calc(24px + 16 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+        }
     }
 
     &__text {
         font-size: 20px;
         line-height: calc(30 / 20) * 100%;
+
+        @media (max-width: 1200px) {
+            font-size: calc(16px + 4 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(16px + (4 + 4 * 0.7) * (100vw - 320px) / 1200);
+        }
     }
 }
 .main-history {

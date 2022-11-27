@@ -545,8 +545,18 @@ body {
 .page-about__head-history {
   padding: 15px 0px 52px;
 }
+@media (max-width: 1280px) {
+  .page-about__head-history {
+    padding: 15px 15px 52px;
+  }
+}
 .page-about__main-history {
   padding: 53px 0px;
+}
+@media (max-width: 1280px) {
+  .page-about__main-history {
+    padding: 53px 15px;
+  }
 }
 .page-about__sub-changes {
   padding: 52px 0px;
@@ -565,10 +575,40 @@ body {
   font-size: 90px;
   margin-bottom: 44px;
 }
+@media (max-width: 1200px) {
+  .head-hist__heading {
+    font-size: calc(44px + 3.6666666667vw);
+  }
+}
+@media (max-width: 767px) {
+  .head-hist__heading {
+    font-size: calc(44px + 74.8 * (100vw - 320px) / 1200);
+  }
+}
 .head-hist__content {
-  gap: 95px;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .head-hist__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .head-hist__image {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}
+.head-hist__text-content {
+  padding-left: 85px;
+}
+@media (max-width: 1024px) {
+  .head-hist__text-content {
+    padding-left: 0;
+  }
+}
+
 .headhist-cont > *:not(:last-child) {
   margin-bottom: 25px;
 }
@@ -576,15 +616,45 @@ body {
   font-size: 20px;
   line-height: 150%;
 }
+@media (max-width: 1200px) {
+  .headhist-cont__subheading {
+    font-size: calc(16px + 0.3333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .headhist-cont__subheading {
+    font-size: calc(16px + 6.8 * (100vw - 320px) / 1200);
+  }
+}
 .headhist-cont__quotes {
   font-weight: 600;
   font-size: 40px;
   line-height: 102.5%;
   letter-spacing: -0.06em;
 }
+@media (max-width: 1200px) {
+  .headhist-cont__quotes {
+    font-size: calc(24px + 1.3333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .headhist-cont__quotes {
+    font-size: calc(24px + 27.2 * (100vw - 320px) / 1280);
+  }
+}
 .headhist-cont__text {
   font-size: 20px;
   line-height: 150%;
+}
+@media (max-width: 1200px) {
+  .headhist-cont__text {
+    font-size: calc(16px + 0.3333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .headhist-cont__text {
+    font-size: calc(16px + 6.8 * (100vw - 320px) / 1200);
+  }
 }
 
 .main-history__content > *:not(:last-child) {
