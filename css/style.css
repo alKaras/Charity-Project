@@ -306,7 +306,7 @@ body {
     font-size: 64px;
   }
 }
-.history-block__video-content img {
+.history-block__video-content div {
   border: 6px solid black;
   border-radius: 16px;
 }
