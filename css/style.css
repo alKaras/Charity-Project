@@ -400,6 +400,9 @@ body {
   color: black;
 }
 
+.donate-block__content {
+  gap: 100px;
+}
 .donate-block__image {
   position: relative;
 }
