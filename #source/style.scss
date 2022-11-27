@@ -117,13 +117,11 @@ body {
     min-width: 100%;
 }
 
+//------------------------------------------------
+
 ._container {
     margin: 0 auto;
     max-width: 1280px;
-
-    @media (max-width: 1280px) {
-        max-width: 1120px;
-    }
 }
 
 .img-backg {
@@ -223,15 +221,20 @@ body {
         color: black;
         background: #e28484;
         cursor: pointer;
+
+        font-size: calc(10px + 6 * (100vw / 1280));
+
+        @media (max-width: 767px) {
+            font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1280));
+        }
         &:hover {
             color: black;
         }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 767px) {
             padding: 6px 10px;
         }
 
         @media (max-width: 500px) {
-            font-size: 10px;
             padding: 4px 8px;
         }
     }
@@ -242,27 +245,41 @@ body {
     &__dropdown {
         margin-right: 5px;
 
-        @media screen and (max-width: 600px) {
-            font-size: 24px;
+        font-size: calc(10px + 6 * (100vw / 1280));
+
+        @media (max-width: 767px) {
+            font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1280));
         }
 
-        @media (max-width: 500px) {
-            font-size: 10px;
+        & ul.dropdown {
+            @media (max-width: 767px) {
+                padding-left: 12px;
+            }
         }
     }
+
+    & .container-fluid {
+        padding: 0;
+    }
 }
+
 .logo {
-    font-size: 32px;
+    // font-size: 32px; // mob - 16
     font-weight: 600;
     line-height: calc(48 / 32) * 100%;
     letter-spacing: -0.06em;
 
-    @media screen and (max-width: 600px) {
-        font-size: 24px;
-    }
+    font-size: calc(12px + 20 * (100vw / 1280));
 
-    @media (max-width: 500px) {
-        font-size: 14px;
+    @media (max-width: 767px) {
+        font-size: calc(12px + (20 + 20 * 0.7) * ((100vw - 320px) / 1280));
+        margin-right: 5px;
+    }
+}
+
+.navbar-toggler {
+    @media (max-width: 767px) {
+        padding: 3.5px 5px;
     }
 }
 
@@ -271,11 +288,17 @@ body {
     margin-right: 32px;
     gap: 32px;
     &__item {
+        font-size: calc(12px + 4 * (100vw / 990));
+
+        @media (max-width: 767px) {
+            font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 990));
+        }
     }
 
     &__link {
         color: black;
         padding: 8px 15px;
+        cursor: pointer;
     }
 }
 
@@ -307,16 +330,11 @@ body {
 
             @media (max-width: 1200px) {
                 text-align: center;
-                font-size: 64px;
-            }
-
-            @media (max-width: 1024px) {
+                font-size: calc(28px + 36 * (100vw / 1200));
             }
 
             @media (max-width: 767px) {
-            }
-
-            @media (max-width: 480px) {
+                font-size: calc(28px + (36 + 36 * 0.7) * ((100vw - 320px) / 1200));
             }
         }
     }
@@ -335,7 +353,7 @@ body {
 
     &__text {
         margin-bottom: 24px;
-        font-size: 24px;
+        font-size: calc(14px + 10 * (100vw / 1280));
         line-height: calc(24 / 16) * 100%;
 
         @media (max-width: 1200px) {
@@ -343,6 +361,11 @@ body {
             max-width: 800px;
             margin: 0 auto;
             margin-bottom: 24px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(14px + (10 + 10 * 0.7) * (100vw - 320px) / 1280);
+            margin-bottom: 20px;
         }
     }
 
@@ -352,8 +375,22 @@ body {
         display: flex;
         justify-content: space-between;
         width: 153px;
+        font-size: calc(10px + 6 * (100vw / 1280));
+
+        @media (max-width: 767px) {
+            font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1280));
+        }
         @media (max-width: 1200px) {
             margin: 0 auto;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 6px 10px;
+            width: 123px;
+        }
+
+        @media (max-width: 500px) {
+            padding: 4px 8px;
+            width: 103px;
         }
         &:hover {
             color: black;
@@ -369,12 +406,18 @@ body {
         text-align: right;
         font-weight: 600;
         font-size: 40px;
+
         line-height: 102.5%;
         letter-spacing: -0.06em;
 
         @media (max-width: 1200px) {
+            font-size: calc(24px + 16 * (100vw / 1200));
             text-align: center;
             margin: 0 auto;
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
         }
     }
 
@@ -409,10 +452,13 @@ body {
         display: flex;
         justify-content: space-between;
         width: 103px;
+        font-size: calc(10px + 6 * (100vw / 1280));
 
         @media (max-width: 767px) {
+            font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1280));
+            padding: 4px 8px;
             margin: 0 auto;
-            max-width: 153px;
+            justify-content: space-evenly;
         }
         &:hover {
             color: black;
@@ -424,7 +470,6 @@ body {
 
 .donate-block {
     &__content {
-        gap: 100px;
     }
 
     &__image {
@@ -451,8 +496,14 @@ body {
     }
 
     &__text-content {
+        padding-left: 50px;
         @media (max-width: 767px) {
+            padding: 0 25px;
             text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            padding: 0 15px;
         }
     }
 }
@@ -463,13 +514,28 @@ body {
     &__heading {
         font-weight: 600;
         font-size: 48px;
+
         line-height: 100%;
         letter-spacing: -0.06em;
+
+        @media (max-width: 1200px) {
+            font-size: calc(24px + 20 * (100vw / 1200));
+        }
+        @media (max-width: 767px) {
+            font-size: calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1280));
+            text-align: center;
+            padding: 0;
+        }
     }
 
     &__text {
         line-height: calc(24 / 16) * 100%;
         font-weight: 400;
+        font-size: calc(14px + 2 * (100vw / 1280));
+
+        @media (max-width: 767px) {
+            font-size: calc(14px + (2 + 2 * 0.7) * ((100vw - 320px) / 1280));
+        }
     }
 
     &__btn {
@@ -479,8 +545,14 @@ body {
         cursor: pointer;
         color: #000;
 
+        font-size: calc(10px + 6 * (100vw / 1280));
+
         @media (max-width: 767px) {
+            font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1280));
+            padding: 4px 8px;
+            width: 103px;
             margin: 0 auto;
+            justify-content: space-evenly;
         }
         &:hover {
             color: #000;
@@ -884,6 +956,12 @@ body {
         color: #000;
         background: #e28484;
         cursor: pointer;
+        font-size: calc(10px + 6 * (100vw / 1280));
+
+        @media (max-width: 767px) {
+            font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1280));
+            padding: 4px 8px;
+        }
         &:hover {
             color: black;
         }
