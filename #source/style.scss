@@ -945,10 +945,16 @@ body {
 //Main Donate sections
 .page-donate {
     &__main-donate {
-        padding-top: 21px;
+        padding: 21px 15px 0;
+        margin-bottom: 170px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 85px;
+        }
     }
 
     &__postscriptum {
+        padding: 0 15px;
     }
 }
 .main-donate {
@@ -959,9 +965,18 @@ body {
         font-weight: 600;
         font-size: 90px;
         line-height: 102.5%;
-        width: 653px;
+        max-width: 653px;
         letter-spacing: -0.06em;
         margin-bottom: 46px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(40px + 50 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(40px + (50 + 50 * 0.7) * ((100vw - 320px) / 1200));
+            margin-bottom: 23px;
+        }
     }
 
     &__content {
@@ -973,10 +988,22 @@ body {
         font-size: 40px;
         line-height: 102.5%;
         margin-bottom: 25px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(24px + 16 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1200));
+        }
     }
 
     &__content-cards {
         margin-bottom: 60px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__text {
@@ -985,11 +1012,41 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 15px;
+
+        & #copied-text {
+            font-size: 20px;
+            @media (max-width: 1200px) {
+                font-size: calc(14px + 10 * (100vw / 1200));
+            }
+
+            @media (max-width:767px) {
+                font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1200));
+            }
+        }
+
+        @media (max-width: 1200px) {
+            font-size: calc(16px + 8 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1200));
+        }
     }
 
     &__button {
         padding: 16px;
         border-radius: 15px;
+
+        
+
+        @media (max-width: 555px) {
+            padding: 8px;
+        }
+        span {
+            @media (max-width: 555px) {
+                display: none;
+            }
+        }
     }
 }
 .postscriptum {
@@ -1001,9 +1058,17 @@ body {
         line-height: 100%;
         font-weight: 600;
         margin: 0 auto;
-        width: 845px;
+        max-width: 845px;
         text-align: center;
         margin-bottom: 55px;
+
+        @media (max-width:1200px) {
+            font-size: calc(20px + 28 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(20px + (28 + 28 * 0.7) * ((100vw - 320px) / 1200));
+        }
     }
 }
 

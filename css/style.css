@@ -894,15 +894,36 @@ body {
 }
 
 .page-donate__main-donate {
-  padding-top: 21px;
+  padding: 21px 15px 0;
+  margin-bottom: 170px;
 }
+@media (max-width: 767px) {
+  .page-donate__main-donate {
+    margin-bottom: 85px;
+  }
+}
+.page-donate__postscriptum {
+  padding: 0 15px;
+}
+
 .main-donate__heading {
   font-weight: 600;
   font-size: 90px;
   line-height: 102.5%;
-  width: 653px;
+  max-width: 653px;
   letter-spacing: -0.06em;
   margin-bottom: 46px;
+}
+@media (max-width: 1200px) {
+  .main-donate__heading {
+    font-size: calc(40px + 4.1666666667vw);
+  }
+}
+@media (max-width: 767px) {
+  .main-donate__heading {
+    font-size: calc(40px + 85 * (100vw - 320px) / 1200);
+    margin-bottom: 23px;
+  }
 }
 .accounts__heading {
   font-weight: 600;
@@ -910,8 +931,23 @@ body {
   line-height: 102.5%;
   margin-bottom: 25px;
 }
+@media (max-width: 1200px) {
+  .accounts__heading {
+    font-size: calc(24px + 1.3333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .accounts__heading {
+    font-size: calc(24px + 27.2 * (100vw - 320px) / 1200);
+  }
+}
 .accounts__content-cards {
   margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .accounts__content-cards {
+    margin-bottom: 30px;
+  }
 }
 .accounts__text {
   font-size: 24px;
@@ -920,9 +956,42 @@ body {
   align-items: center;
   margin-bottom: 15px;
 }
+.accounts__text #copied-text {
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .accounts__text #copied-text {
+    font-size: calc(14px + 0.8333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .accounts__text #copied-text {
+    font-size: calc(14px + 17 * (100vw - 320px) / 1200);
+  }
+}
+@media (max-width: 1200px) {
+  .accounts__text {
+    font-size: calc(16px + 0.6666666667vw);
+  }
+}
+@media (max-width: 767px) {
+  .accounts__text {
+    font-size: calc(16px + 13.6 * (100vw - 320px) / 1200);
+  }
+}
 .accounts__button {
   padding: 16px;
   border-radius: 15px;
+}
+@media (max-width: 555px) {
+  .accounts__button {
+    padding: 8px;
+  }
+}
+@media (max-width: 555px) {
+  .accounts__button span {
+    display: none;
+  }
 }
 
 .postscriptum__text {
@@ -930,9 +999,19 @@ body {
   line-height: 100%;
   font-weight: 600;
   margin: 0 auto;
-  width: 845px;
+  max-width: 845px;
   text-align: center;
   margin-bottom: 55px;
+}
+@media (max-width: 1200px) {
+  .postscriptum__text {
+    font-size: calc(20px + 2.3333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .postscriptum__text {
+    font-size: calc(20px + 47.6 * (100vw - 320px) / 1200);
+  }
 }
 
 .page-news__news {
