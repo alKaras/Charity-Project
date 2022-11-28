@@ -1026,6 +1026,16 @@ body {
   font-weight: 600;
   font-size: 64px;
 }
+@media (max-width: 1200px) {
+  .news__heading {
+    font-size: calc(32px + 2.6666666667vw);
+  }
+}
+@media (max-width: 767px) {
+  .news__heading {
+    font-size: calc(32px + 54.4 * (100vw - 320px) / 1200);
+  }
+}
 .news-section {
   padding: 10px 15px 15px;
 }
@@ -1033,6 +1043,16 @@ body {
   font-weight: 600;
   font-size: 48px;
   margin-bottom: 15px;
+}
+@media (max-width: 1200px) {
+  .news-section__heading {
+    font-size: calc(24px + 2vw);
+  }
+}
+@media (max-width: 767px) {
+  .news-section__heading {
+    font-size: calc(24px + 40.8 * (100vw - 320px) / 1200);
+  }
 }
 .news-section__image {
   text-align: center;
@@ -1044,6 +1064,17 @@ body {
   text-align: justify;
   margin-bottom: 25px;
 }
+@media (max-width: 1200px) {
+  .news-section__main-text {
+    font-size: calc(14px + 0.5vw);
+  }
+}
+@media (max-width: 767px) {
+  .news-section__main-text {
+    font-size: calc(14px + 10.2 * (100vw - 320px) / 1200);
+    margin-bottom: 15px;
+  }
+}
 .news-section__button {
   margin-bottom: 25px;
   display: flex;
@@ -1054,6 +1085,17 @@ body {
   background: #e28484;
   cursor: pointer;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .news-section__button {
+    font-size: calc(10px + 0.5vw);
+  }
+}
+@media (max-width: 767px) {
+  .news-section__button {
+    font-size: calc(10px + 10.2 * (100vw - 320px) / 1200);
+    padding: 4px 8px;
+  }
 }
 .news-section__button:hover {
   color: black;
@@ -1074,12 +1116,32 @@ body {
 .lst-news__text {
   margin-bottom: 8px;
 }
+@media (max-width: 1200px) {
+  .lst-news__text {
+    font-size: calc(12px + 0.3333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .lst-news__text {
+    font-size: calc(12px + 6.8 * (100vw - 320px) / 1200);
+  }
+}
 .lst-news__button {
   padding: 8px 16px;
   display: flex;
   font-weight: 600;
   max-width: 125px;
   justify-content: center;
+}
+@media (max-width: 1200px) {
+  .lst-news__button {
+    font-size: calc(10px + 0.3333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .lst-news__button {
+    font-size: calc(10px + 6.8 * (100vw - 320px) / 1200);
+  }
 }
 
 .footer {

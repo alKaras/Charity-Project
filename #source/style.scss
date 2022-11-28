@@ -1019,7 +1019,7 @@ body {
                 font-size: calc(14px + 10 * (100vw / 1200));
             }
 
-            @media (max-width:767px) {
+            @media (max-width: 767px) {
                 font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1200));
             }
         }
@@ -1036,8 +1036,6 @@ body {
     &__button {
         padding: 16px;
         border-radius: 15px;
-
-        
 
         @media (max-width: 555px) {
             padding: 8px;
@@ -1062,7 +1060,7 @@ body {
         text-align: center;
         margin-bottom: 55px;
 
-        @media (max-width:1200px) {
+        @media (max-width: 1200px) {
             font-size: calc(20px + 28 * (100vw / 1200));
         }
 
@@ -1087,6 +1085,14 @@ body {
         margin-bottom: 24px;
         font-weight: 600;
         font-size: 64px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(32px + 32 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(32px + (32 + 32 * 0.7) * ((100vw - 320px) / 1200));
+        }
     }
 
     &__cards {
@@ -1106,6 +1112,14 @@ body {
         font-weight: 600;
         font-size: 48px;
         margin-bottom: 15px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(24px + 24 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1200));
+        }
     }
 
     &__socials {
@@ -1121,6 +1135,15 @@ body {
         line-height: 102.5%;
         text-align: justify;
         margin-bottom: 25px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(14px + 6 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(14px + (6 + 6 * 0.7) * ((100vw - 320px) / 1200));
+            margin-bottom: 15px;
+        }
     }
 
     &__button {
@@ -1133,6 +1156,15 @@ body {
         background: #e28484;
         cursor: pointer;
         margin: 0 auto;
+
+        @media (max-width: 1200px) {
+            font-size: calc(10px + 6 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1200));
+            padding: 4px 8px;
+        }
 
         &:hover {
             color: black;
@@ -1168,6 +1200,14 @@ body {
 
     &__text {
         margin-bottom: 8px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(12px + 4 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));
+        }
     }
 
     &__button {
@@ -1176,6 +1216,14 @@ body {
         font-weight: 600;
         max-width: 125px;
         justify-content: center;
+
+        @media (max-width: 1200px) {
+            font-size: calc(10px + 4 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));
+        }
     }
 }
 
