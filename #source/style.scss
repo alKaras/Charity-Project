@@ -580,14 +580,26 @@ body {
 
     &__sub-changes {
         padding: 52px 0px;
+
+        @media (max-width: 1280px) {
+            padding: 52px 15px;
+        }
     }
 
     &__changes {
         padding: 53px 0px 30px;
+
+        @media (max-width: 1280px) {
+            padding: 53px 15px 30px;
+        }
     }
 
     &__donations {
         padding: 30px 0px 110px;
+
+        @media (max-width: 1280px) {
+            padding: 30px 15px 110px;
+        }
     }
 }
 .head-hist {
@@ -612,18 +624,15 @@ body {
     &__content {
         align-items: center;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 992px) {
             flex-direction: column;
-            text-align: center;
         }
     }
 
     &__image {
-
         @media (max-width: 1024px) {
             margin-bottom: 35px;
             text-align: center;
-            
         }
         @media (max-width: 767px) {
         }
@@ -633,6 +642,10 @@ body {
         padding-left: 85px;
 
         @media (max-width: 1024px) {
+            padding-left: 45px;
+        }
+
+        @media (max-width: 992px) {
             padding-left: 0;
         }
     }
@@ -690,37 +703,99 @@ body {
     }
 
     &__section-f-cont {
-        gap: 85px;
         align-items: center;
         justify-content: space-between;
-        font-size: 20px;
-        line-height: calc(30 / 20) * 100%;
-    }
 
-    &__text {
-    }
-
-    &__image {
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     &__section-s-cont {
-        font-size: 20px;
-        text-align: center;
-        line-height: calc(30 / 20) * 100%;
     }
 
     &__section-th-cont {
-        gap: 80px;
         align-items: center;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.section-first {
+    &__text {
+        padding-right: 85px;
+
         font-size: 20px;
         line-height: calc(30 / 20) * 100%;
-        text-align: right;
+
+        @media (max-width: 1200px) {
+            font-size: calc(16px + 4 * (100vw / 1200));
+        }
+
+        @media (max-width: 1024px) {
+            padding-right: 45px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(16px + (4 + 4 * 0.7) * (100vw - 320px) / 1200);
+            padding-right: 0;
+            text-align: center;
+            margin-bottom: 25px;
+        }
     }
 }
 
 .section-second {
     &__text {
         margin-bottom: 20px;
+
+        font-size: 20px;
+        text-align: center;
+        line-height: calc(30 / 20) * 100%;
+
+        @media (max-width: 1200px) {
+            font-size: calc(16px + 4 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(16px + (4 + 4 * 0.7) * (100vw - 320px) / 1200);
+        }
+    }
+
+    &__image {
+        text-align: center;
+    }
+}
+.section-third {
+    &__text {
+        padding-left: 85px;
+
+        font-size: 20px;
+        line-height: calc(30 / 20) * 100%;
+        text-align: right;
+
+        @media (max-width: 1200px) {
+            font-size: calc(16px + 4 * (100vw / 1200));
+        }
+
+        @media (max-width: 1024px) {
+            padding-left: 45px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(16px + (4 + 4 * 0.7) * (100vw - 320px) / 1200);
+            text-align: center;
+            padding-left: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__image {
+        @media (max-width: 767px) {
+            order: 2;
+        }
     }
 }
 .sub-changes {
@@ -735,12 +810,27 @@ body {
         font-size: 20px;
         line-height: calc(30 / 20) * 100%;
         margin-bottom: 25px;
+        @media (max-width: 1200px) {
+            font-size: calc(16px + 4 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(16px + (4 + 4 * 0.7) * (100vw - 320px) / 1200);
+        }
     }
 
     &__card-row {
+        @media (max-width: 767px) {
+            & > *:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
     }
 
     &__card-column {
+        @media (max-width: 767px) {
+            text-align: center;
+        }
     }
 }
 .changes {
@@ -756,16 +846,32 @@ body {
         text-align: center;
         letter-spacing: -0.06em;
         font-weight: 600;
-        height: 410px;
-        width: 1148px;
+        max-width: 1148px;
         margin: 0 auto;
         margin-bottom: 46px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(24px + 16 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+            margin-bottom: 23px;
+        }
     }
 
     &__card-row {
+        @media (max-width: 767px) {
+            & > *:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
     }
 
     &__card-column {
+        @media (max-width: 767px) {
+            text-align: center;
+        }
     }
 }
 .donations {
@@ -779,10 +885,19 @@ body {
         text-align: center;
         font-weight: 600;
         font-size: 48px;
-        width: 850px;
+        max-width: 850px;
         margin: 0 auto;
         line-height: 100%;
         margin-bottom: 18px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(24px + 16 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+            margin-bottom: 9px;
+        }
     }
 
     &__text {
@@ -790,18 +905,36 @@ body {
         line-height: calc(36 / 24) * 100%;
         text-align: center;
         margin: 0 auto;
-        width: 727px;
+        max-width: 727px;
         margin-bottom: 28px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(16px + 8 * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            font-size: calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 1280));
+            margin-bottom: 14px;
+        }
     }
 
     &__button {
         display: block;
-        width: 128px;
+        max-width: 128px;
         margin: 0 auto;
-
+        text-align: center;
         background-color: rgba(226, 132, 132, 1);
         color: #000;
         font-size: 24px;
+
+        @media (max-width: 1200px) {
+            font-size: calc(14px + (10) * (100vw / 1200));
+        }
+
+        @media (max-width: 767px) {
+            padding: 4px 8px;
+            font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1200));
+        }
 
         &:hover {
             color: #000;
