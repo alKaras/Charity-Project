@@ -956,19 +956,19 @@ body {
   align-items: center;
   margin-bottom: 15px;
 }
-.accounts__text #copied-text {
+.accounts__text .copied-text {
   font-size: 20px;
   background-color: #fff;
   color: black;
 }
 @media (max-width: 1200px) {
-  .accounts__text #copied-text {
-    font-size: calc(14px + 0.8333333333vw);
+  .accounts__text .copied-text {
+    font-size: calc(12px + 0.6666666667vw);
   }
 }
 @media (max-width: 767px) {
-  .accounts__text #copied-text {
-    font-size: calc(14px + 17 * (100vw - 320px) / 1200);
+  .accounts__text .copied-text {
+    font-size: calc(12px + 13.6 * (100vw - 320px) / 1200);
   }
 }
 @media (max-width: 1200px) {

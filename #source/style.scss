@@ -1013,16 +1013,16 @@ body {
         align-items: center;
         margin-bottom: 15px;
 
-        & #copied-text {
+        & .copied-text {
             font-size: 20px;
             background-color: #fff;
             color: black;
             @media (max-width: 1200px) {
-                font-size: calc(14px + 10 * (100vw / 1200));
+                font-size: calc(12px + 8 * (100vw / 1200));
             }
 
             @media (max-width: 767px) {
-                font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1200));
+                font-size: calc(12px + (8 + 8 * 0.7) * ((100vw - 320px) / 1200));
             }
         }
 

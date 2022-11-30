@@ -1,6 +1,5 @@
 
 let clipboard1 = new ClipboardJS(".button-copy");
-let clipbtn = document.querySelector(".button-copy");
 
 clipboard1.on('success', function (e) {
     console.info('Action:', e.action);
