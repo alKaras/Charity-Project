@@ -958,6 +958,8 @@ body {
 }
 .accounts__text #copied-text {
   font-size: 20px;
+  background-color: #fff;
+  color: black;
 }
 @media (max-width: 1200px) {
   .accounts__text #copied-text {

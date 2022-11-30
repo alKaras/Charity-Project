@@ -1015,6 +1015,8 @@ body {
 
         & #copied-text {
             font-size: 20px;
+            background-color: #fff;
+            color: black;
             @media (max-width: 1200px) {
                 font-size: calc(14px + 10 * (100vw / 1200));
             }
