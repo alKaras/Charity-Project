@@ -1,21 +1,30 @@
-// // let copyBtn1 = document.getElementsByClassName("button-copy")[0];
-// // let copyBtn2 = document.getElementsByClassName("button-copy")[1];
-// // copyBtn.addEventListener('click', copyToClipBoard());
-// let copyButtons = document.querySelectorAll(".button-copy");
-// let copyTexts = document.querySelectorAll('#copied-text');
 
-// copyButtons[0].addEventListener('click', copyToClipBoard(0));
+let clipboard1 = new ClipboardJS(".button-copy");
+let clipbtn = document.querySelector(".button-copy");
 
-// // copyButtons[1].addEventListener('click', copyToClipBoard(1));
-// // copyButtons[2].addEventListener('click', copyToClipBoard(2));
-// copyButtons[3].addEventListener('click', copyToClipBoard(3));
-// // copyButtons[4].addEventListener('click', copyToClipBoard(4));
+clipboard1.on('success', function (e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+    setTimeout(() => {
+        setTimeout(() => {
+            e.trigger.classList.toggle('success');
+        }, 1500)
+        e.trigger.classList.toggle('success');
+    }, 300)
+    e.clearSelection();
+});
 
-// function copyToClipBoard(index) {
-//     let copyText = copyTexts[index].innerHTML;
-//     navigator.clipboard.writeText(copyText).then(() => {
-//         console.log("text");
-//     })
-// }
+clipboard1.on('error', function (e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
 
+    setTimeout(() => {
+        setTimeout(() => {
+            e.trigger.classList.toggle('error')
+        }, 1500)
+        e.trigger.classList.toggle('error');
+    },300)
+    e.clearSelection();
+});
 

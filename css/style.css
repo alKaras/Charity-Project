@@ -984,6 +984,7 @@ body {
 .accounts__button {
   padding: 16px;
   border-radius: 15px;
+  position: relative;
 }
 @media (max-width: 555px) {
   .accounts__button {
@@ -993,6 +994,36 @@ body {
 @media (max-width: 555px) {
   .accounts__button span {
     display: none;
+  }
+}
+
+.success::after {
+  content: "Copied!";
+  position: absolute;
+  font-size: 14px;
+  top: -35px;
+  right: 0;
+  transition: all 0.5s;
+  padding: 5px;
+  border-radius: 25px;
+  background: lightgreen;
+}
+
+.error::after {
+  content: "Press Ctrl + C to copy";
+  position: absolute;
+  font-size: 14px;
+  max-width: 150px;
+  top: -35px;
+  right: 0;
+  transition: all 0.5s;
+  padding: 5px;
+  border-radius: 25px;
+  background: rgba(255, 0, 0, 0.5);
+}
+@media (max-width: 555px) {
+  .error::after {
+    content: "copy manually";
   }
 }
 

@@ -87,19 +87,20 @@
                         </h2>
                         <div class="accounts__content-cards">
                             <div class="accounts__text">
-                                PayPal: <p id="copied-text">fr.sergiysh@gmail.com</p>
+                                PayPal: <input id="copied-text-paypal" value="fr.sergiysh@gmail.com"></input>
+                                <button data-clipboard-target="#copied-text-paypal"
+                                    class="accounts__button button-copy">
+                                    <i class="fa-regular fa-copy"></i> <span>Скопіювати</span>
+                                </button>
+                            </div>
+                            <div class="accounts__text">
+                                SWIFT in USD: <p id="copied-text-swiftus"></p>
                                 <button class="accounts__button button-copy">
                                     <i class="fa-regular fa-copy"></i> <span>Скопіювати</span>
                                 </button>
                             </div>
                             <div class="accounts__text">
-                                SWIFT in USD: <p id="copied-text"></p>
-                                <button class="accounts__button button-copy">
-                                    <i class="fa-regular fa-copy"></i> <span>Скопіювати</span>
-                                </button>
-                            </div>
-                            <div class="accounts__text">
-                                Swift in EUR: <p id="copied-text"></p>
+                                Swift in EUR: <p id="copied-text-swifteu"></p>
                                 <button class="accounts__button button-copy">
                                     <i class="fa-regular fa-copy"></i> <span>Скопіювати</span>
                                 </button>
@@ -110,13 +111,14 @@
                         </h2>
                         <div class="accounts__content-cards">
                             <div class="accounts__text">
-                                PrivatBank: <p id="copied-text">4441 5840 2343 3245</p>
-                                <button class="accounts__button button-copy">
+                                PrivatBank: <input id="copied-text-privat" value="4441 5840 2343 3245"></input>
+                                <button data-clipboard-target="#copied-text-privat"
+                                    class="accounts__button button-copy">
                                     <i class="fa-regular fa-copy"></i> <span>Скопіювати</span>
                                 </button>
                             </div>
                             <div class="accounts__text">
-                                MonoBank: <p id="copied-text"></p>
+                                MonoBank: <p id="copied-text-monobank"></p>
                                 <button class="accounts__button button-copy">
                                     <i class="fa-regular fa-copy"></i> <span>Скопіювати</span>
                                 </button>
@@ -170,7 +172,10 @@
         crossorigin="anonymous"></script>
     <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
     <script src="https://kit.fontawesome.com/bcad55ae1a.js" crossorigin="anonymous"></script>
+    <!-- <script src="js/clipboard.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     <script src="js/script.js"></script>
+
     </div>
 </body>
 
