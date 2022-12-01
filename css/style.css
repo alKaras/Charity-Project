@@ -1027,7 +1027,7 @@ body {
   border-radius: 25px;
   background: rgba(255, 0, 0, 0.5);
 }
-@media (max-width: 555px) {
+@media (max-width: 960px) {
   .error::after {
     content: "copy manually";
   }

@@ -1079,7 +1079,7 @@ body {
     border-radius: 25px;
     background: rgba($color: red, $alpha: 0.5);
 
-    @media (max-width:555px) {
+    @media (max-width:960px) {
         // left: -100%;
         content: "copy manually";
     }
