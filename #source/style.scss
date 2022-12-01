@@ -1064,6 +1064,15 @@ body {
     padding: 5px;
     border-radius: 25px;
     background: lightgreen;
+
+    @media (max-width:1200px) {
+        font-size: calc(10px + 4 * (100vw / 1200));
+    }
+
+    @media (max-width:767px) {
+        top: -25px;
+        font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));
+    }
 }
 
 .error::after {
@@ -1079,9 +1088,17 @@ body {
     border-radius: 25px;
     background: rgba($color: red, $alpha: 0.5);
 
+    @media (max-width:1200px) {
+        font-size: calc(10px + 4 * (100vw / 1200));
+    }
+
     @media (max-width:960px) {
         // left: -100%;
         content: "copy manually";
+    }
+
+    @media (max-width:767px) {
+        font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));
     }
 }
 .postscriptum {

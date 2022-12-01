@@ -1014,6 +1014,17 @@ body {
   border-radius: 25px;
   background: lightgreen;
 }
+@media (max-width: 1200px) {
+  .success::after {
+    font-size: calc(10px + 0.3333333333vw);
+  }
+}
+@media (max-width: 767px) {
+  .success::after {
+    top: -25px;
+    font-size: calc(10px + 6.8 * (100vw - 320px) / 1200);
+  }
+}
 
 .error::after {
   content: "Press Ctrl + C to copy";
@@ -1027,9 +1038,19 @@ body {
   border-radius: 25px;
   background: rgba(255, 0, 0, 0.5);
 }
+@media (max-width: 1200px) {
+  .error::after {
+    font-size: calc(10px + 0.3333333333vw);
+  }
+}
 @media (max-width: 960px) {
   .error::after {
     content: "copy manually";
+  }
+}
+@media (max-width: 767px) {
+  .error::after {
+    font-size: calc(10px + 6.8 * (100vw - 320px) / 1200);
   }
 }
 
