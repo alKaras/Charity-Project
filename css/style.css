@@ -949,6 +949,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 555px) {
+  .accounts__content-cards {
+    justify-content: center;
+  }
+}
 .accounts__text {
   font-size: 24px;
   display: flex;
@@ -960,6 +965,7 @@ body {
   font-size: 20px;
   background-color: #fff;
   color: black;
+  text-align: center;
 }
 @media (max-width: 1200px) {
   .accounts__text .copied-text {
@@ -973,12 +979,12 @@ body {
 }
 @media (max-width: 1200px) {
   .accounts__text {
-    font-size: calc(16px + 0.6666666667vw);
+    font-size: calc(14px + 0.8333333333vw);
   }
 }
 @media (max-width: 767px) {
   .accounts__text {
-    font-size: calc(16px + 13.6 * (100vw - 320px) / 1200);
+    font-size: calc(14px + 17 * (100vw - 320px) / 1200);
   }
 }
 .accounts__button {
